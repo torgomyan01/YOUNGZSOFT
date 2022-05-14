@@ -1,6 +1,7 @@
-const {active, none} = {
+const {active, none, fix} = {
     active: 'active',
-    none: 'd-none'
+    none: 'd-none',
+    fix: 'fix'
 }
 
 
@@ -16,6 +17,16 @@ defDropdowns.on('click', function (){
     }
 })
 
+
+const nav = $('.nav');
+$(window).on('scroll', function (e){
+    const scrollTop = $(window).scrollTop();
+    if(scrollTop > 200){
+        nav.addClass(fix);
+    } else {
+        nav.removeClass(fix);
+    }
+})
 
 
 
