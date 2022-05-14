@@ -3,6 +3,9 @@ const {active, none, fix} = {
     none: 'd-none',
     fix: 'fix'
 }
+const mobileMenu = $('.mobile-menu-board');
+const _menu = $('.mobile-menu');
+
 
 
 const defDropdowns = $('.def-dropdown');
@@ -21,7 +24,7 @@ defDropdowns.on('click', function (){
 const nav = $('.nav');
 $(window).on('scroll', function (e){
     const scrollTop = $(window).scrollTop();
-    if(scrollTop > 200){
+    if(scrollTop > 100){
         nav.addClass(fix);
     } else {
         nav.removeClass(fix);
@@ -29,6 +32,55 @@ $(window).on('scroll', function (e){
 })
 
 
+const mobileMenuItem = $('.mobile-menu-item');
+
+mobileMenuItem.on('click', function (){
+    const thisElem = $(this);
+    if(thisElem.hasClass(active)){
+        mobileMenuItem.removeClass(active);
+    } else {
+        mobileMenuItem.removeClass(active);
+        thisElem.addClass(active);
+    }
+})
+
+
+$('#mobile-login-btn').on('click', function (){
+    $(this).addClass(none);
+    $('#mobile-login-form').removeClass(none);
+})
+
+const modalBody = $('.modal-body');
+const platHeaderBtn = $('.play-btn');
+const btnCloseModal = $('.btn-close');
+
+platHeaderBtn.on('click', function (){
+    modalBody.html(`
+        <iframe width="100%" 
+            height="497" 
+            src="https://www.youtube.com/embed/CHVFWrIhcvo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+        ></iframe>
+    `)
+});
+
+$('a[data-scroll]').on('click', function (e){
+    e.preventDefault();
+    _menu.removeClass(active);
+    const id = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 100
+    },);
+
+})
+
+
+btnCloseModal.on('click', function (){
+    modalBody.html('');
+})
 
 
 $('#home-slider').slick({
@@ -42,9 +94,6 @@ $('#home-slider').slick({
     autoplaySpeed: 5000,
 });
 
-
-const mobileMenu = $('.mobile-menu-board');
-const _menu = $('.mobile-menu');
 
 mobileMenu.on('click', function (){
     if(_menu.hasClass(active)){

@@ -46,30 +46,27 @@
         </div>
         <div class="dropdown-body pl-30 pr-15 pb-30">
           <p class="item-dropdown-body mt-20">
-            <a href="#">
+            <a href="#icafecloud" data-scroll>
               ICAFECLOUD
             </a>
           </p>
           <p class="item-dropdown-body">
-            <a href="#">
+            <a href="#ccbot" data-scroll>
               CCBOOT
             </a>
           </p>
         </div>
       </div>
-      <a href="#" class="menu-item">
+      <a href="#price-block" data-scroll class="menu-item">
         ЦЕНЫ
       </a>
       <a href="#" class="menu-item">
         ВИКИ
       </a>
-      <a href="#" class="menu-item">
-        ЗАГРУЗКИ
-      </a>
-      <a href="#" class="menu-item">
+      <a href="#contacts" data-scroll class="menu-item">
         КОНТАКТЫ
       </a>
-      <a href="#" class="menu-item">
+      <a href="tel:" class="menu-item">
         <i class="fa-solid fa-phone me-2"></i>
         8 777 777-77-77
       </a>
@@ -79,7 +76,7 @@
           <i class="fa-regular fa-arrow-right-to-bracket me-2"></i>
           Вход
         </div>
-        <div class="dropdown-body pl-20 pr-15 pb-40" style="left: -100%">
+        <div class="dropdown-body pl-20 pr-15 pb-40" style="left: calc(-100% - 17px)">
           <form action="#" method="post" class="row mt-2">
             <div class="col-12 mt-2">
               <label class="def-input">
@@ -110,7 +107,58 @@
 </div>
 
 <div class="mobile-menu">
+  <div class="mobile-menu-item">
+    <span class="d-flex justify-content-between">
+      ПРОДУКТЫ
+      <i class="fa-regular fa-angle-down"></i>
+    </span>
 
+    <div class="mobile-menu-item-body">
+      <a href="#icafecloud" data-scroll class="d-flex justify-content-between">
+        ICAFECLOUD
+      </a>
+      <a href="#ccbot" data-scroll class="d-flex justify-content-between">
+        CCBOOT
+      </a>
+    </div>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#price-block" data-scroll class="d-flex justify-content-between">
+      ЦЕНЫ
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#" class="d-flex justify-content-between">
+      ВИКИ
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#contacts" data-scroll class="d-flex justify-content-between">
+      КОНТАКТЫ
+    </a>
+  </div>
+  <div class="text-center mt-5 fs30 c-while" id="mobile-login-btn">
+    <i class="fa-regular fa-arrow-right-to-bracket me-2"></i>
+    Вход
+  </div>
+
+  <form action="#" method="post" class="row mt-2 d-none mt-5" id="mobile-login-form">
+    <div class="col-12 mt-2">
+      <label class="def-input">
+        <span>Логин </span>
+        <input type="text" name="username">
+      </label>
+    </div>
+    <div class="col-12 mt-2">
+      <label class="def-input">
+        <span>Пароль </span>
+        <input type="password" name="password">
+      </label>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-30">
+      <button type="submit" class="def-btn w-100">Вход</button>
+    </div>
+  </form>
 </div>
 
 <header>
@@ -135,7 +183,7 @@
         </div>
         <div class="col-12 col-md-5 mt-5 mt-md-0">
           <div class="header-video-block">
-            <span class="play-btn">
+            <span class="play-btn" data-bs-toggle="modal" data-bs-target="#ModalPlayVideo">
               <span class="play-btn-min">
                 <i class="fa-solid fa-play"></i>
               </span>
@@ -160,7 +208,7 @@
 
 
 <section class="wrapper">
-    <div class="row mt-120">
+    <div class="row mt-40 mt-md-100">
       <div class="col-12 col-md-4">
         <div class="w-100" id="home-slider">
           <div class="slider-block">
@@ -181,40 +229,56 @@
           </div>
           <div class="slider-block">
             <div class="rounded-slider">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-regular fa-chart-line"></i>
             </div>
             <div>
-              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">СЛЕДИТЕ ЗА УЧАСТНИКАМИ</h3>
+              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">Создание отчетов</h3>
               <p class="fs16 fw-light c-block text-center text-sm-start">
-                Если у вас есть несколько  компьютеров
-                и много участников  в вашем кафе,
-                игровых центрах,  то  вам нужно
-                отслеживать  многих участников.
-                iCafeCloud  делает управление
-                действительно простым.
+                Повседневный бизнес отличается, и создание отчетов о продажах и доходах с iCafeCloud довольно просто. Создавайте ежедневные отчеты о доходах, расходах и участниках. Анализируйте отчеты, чтобы принимать решения по важным вопросам.
               </p>
             </div>
           </div>
           <div class="slider-block">
             <div class="rounded-slider">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-regular fa-money-bill-1"></i>
             </div>
             <div>
-              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">СЛЕДИТЕ ЗА УЧАСТНИКАМИ</h3>
+              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">Дайте пользователю больше ценности</h3>
               <p class="fs16 fw-light c-block text-center text-sm-start">
-                Если у вас есть несколько  компьютеров
-                и много участников  в вашем кафе,
-                игровых центрах,  то  вам нужно
-                отслеживать  многих участников.
-                iCafeCloud  делает управление
-                действительно простым.
+                У вас есть участники, которые играют часами и продолжают играть, хотите дать им бонус за то, что они играют много часов или много тратят? iCafeCloud имеет систему скидок, основанную на сумме пополнения, а также времени, проведенном пользователем. Дайте пользователю больше ценности, играя у вас.
+              </p>
+            </div>
+          </div>
+          <div class="slider-block">
+            <div class="rounded-slider">
+              <i class="fa-regular fa-bars-progress"></i>
+            </div>
+            <div>
+              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">
+                Управляйте своими ПК и консолями
+              </h3>
+              <p class="fs16 fw-light c-block text-center text-sm-start">
+                Вы устали отслеживать время ваших консолей вручную?Функции ICafeCloud позволяют включать/выключать ПК и устройства при запуске и завершении пользовательских сеансов. Позволяет сосредоточиться на зарабатывании денег.
+              </p>
+            </div>
+          </div>
+          <div class="slider-block">
+            <div class="rounded-slider">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            <div>
+              <h3 class="fs20 mb-10 fw-bold text-center text-sm-start mt-3 mt-sm-0">
+                Система награждения призом
+              </h3>
+              <p class="fs16 fw-light c-block text-center text-sm-start">
+                Игроки могут обменять призы на местные монеты. Монеты можно собирать по их результатам в играх, вы сможете создавать свои собственные призы и решать, сколько стоят монеты.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-8 pl-30">
-        <h1 class="c-block fs30 fs50-sm mb-10 text-transform-uppercase mt-90 text-center text-md-start">ИНФОРМАЦИЯ К ОМПАНИИ</h1>
+        <h1 class="c-block fs30 fs50-sm mb-10 text-transform-uppercase mt-90 mt-md-0 text-center text-md-start">ИНФОРМАЦИЯ К ОМПАНИИ</h1>
         <p class="c-block fs21 line-height-25  text-center text-md-start">
           Kvasisat sodingen. Suna soktig. Vogt. Bitris. <br>
           Astrobelt. Dekalingar falöde. Abfoni suskap. Vament. <br>
@@ -232,7 +296,7 @@
 
 
 
-<section class="wrapper mt-70">
+<section class="wrapper mt-80" id="icafecloud">
   <div class="row">
     <div class="col-12 col-md-7">
       <h1 class="c-block fs30 fs50-sm mb-10 text-transform-uppercase  text-center text-md-start">ЧТО ТАКОЕ ICAFECLOUD?</h1>
@@ -264,7 +328,7 @@
 </section>
 
 
-<section class="wrapper mt-70">
+<section class="wrapper mt-70" id="ccbot">
   <div class="row">
     <div class="col-5 d-none d-md-block">
       <img src="images/ccbot.jpg" alt="ICAFECLOUD" class="w-100">
@@ -437,7 +501,7 @@
 </section>
 
 
-<h1 class="fa50 text-center mt-80">YOUNGZSOFT: <b>ЦЕНЫ</b></h1>
+<h1 class="fa50 text-center mt-80" id="price-block">YOUNGZSOFT: <b>ЦЕНЫ</b></h1>
 
 <section class="price-section">
   <div class="price-block">
@@ -539,8 +603,8 @@
 </section>
 
 
-<section>
-  <h1 class="fs50 text-center mt-100 mb-30">
+<section id="contacts">
+  <h1 class="fs30 fs50-md text-center mt-100 mb-30">
     НАПИШИТЕ НАМ ИЛИ ПОЗВОНИТЕ
   </h1>
   <div class="d-flex justify-content-center">
@@ -575,6 +639,22 @@
   </div>
 </footer>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModalPlayVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          УПРАВЛЕНИЕ ИГРАМИ И ВЫПОЛНЕНИЕ СЧЕТА
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
