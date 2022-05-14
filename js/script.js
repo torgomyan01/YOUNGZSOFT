@@ -43,6 +43,28 @@ $('#home-slider').slick({
 });
 
 
+const mobileMenu = $('.mobile-menu-board');
+const _menu = $('.mobile-menu');
+
+mobileMenu.on('click', function (){
+    if(_menu.hasClass(active)){
+        closeMobileMenu();
+    } else {
+        openMobileMenu();
+    }
+})
+
+function openMobileMenu(){
+    mobileMenu.addClass(active);
+    _menu.addClass(active);
+}
+
+function closeMobileMenu(){
+    mobileMenu.removeClass(active);
+    _menu.removeClass(active);
+}
+
+
 // -------------- FOR DEFAULT INPUT FUNCTION -------------------
 
 
