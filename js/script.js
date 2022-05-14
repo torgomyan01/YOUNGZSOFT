@@ -30,6 +30,19 @@ $(window).on('scroll', function (e){
 
 
 
+
+$('#home-slider').slick({
+    dots: true,
+    prevArrow: `<button class="prev-slider"><i class="fas fa-chevron-left"></i></button>`,
+    nextArrow: `<button class="next-slider"><i class="fas fa-chevron-right"></i></button>`,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+
 // -------------- FOR DEFAULT INPUT FUNCTION -------------------
 
 
