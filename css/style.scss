@@ -30,7 +30,7 @@ html {
   box-sizing: border-box;
   outline: none;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .btn-check:focus+.btn, .btn:focus {
@@ -175,6 +175,10 @@ $c-grey-hover: #8f6e47;
 
 .line-height-24{
   line-height: 1.5rem;
+}
+
+.line-height-25{
+  line-height: 1.5625rem;
 }
 
 .dropdown-menu {
@@ -378,7 +382,7 @@ header{
     background-image: url(../images/header-video.png);
     @include flex('c', 'c');
     .messages{
-      width: 100;
+      width: 100%;
       height: auto;
       padding: 0.9375rem 1.0625rem;
       background: rgba(28, 155, 85, 0.67);
@@ -389,6 +393,29 @@ header{
       font-size: 0.85rem;
       line-height: 0.9375rem;
       color: #FFFFFF;
+    }
+  }
+  .wrapper{
+    position: relative;
+    height: calc(100vh - 11rem);
+    .warning{
+      background: rgba(28, 155, 85, 0.5);
+      border-radius: 1.25rem 1.25rem 0 0;
+      text-align: center;
+      padding: 1.5625rem 2.5rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25.3125rem;
+      color: #fff;
+      i{
+        position: absolute;
+        font-size: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 0;
+        color: #fff;
+      }
     }
   }
 }

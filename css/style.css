@@ -21,7 +21,7 @@ html {
           box-sizing: border-box;
   outline: none;
   font-family: 'Inter', sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -94,6 +94,9 @@ a {
 
 .line-height-24 {
   line-height: 1.5rem; }
+
+.line-height-25 {
+  line-height: 1.5625rem; }
 
 .dropdown-menu {
   min-width: unset; }
@@ -330,7 +333,7 @@ header {
         -ms-flex-align: center;
             align-items: center; }
     header .header-video-block .messages {
-      width: 100;
+      width: 100%;
       height: auto;
       padding: 0.9375rem 1.0625rem;
       background: rgba(28, 155, 85, 0.67);
@@ -341,6 +344,27 @@ header {
       font-size: 0.85rem;
       line-height: 0.9375rem;
       color: #FFFFFF; }
+  header .wrapper {
+    position: relative;
+    height: calc(100vh - 11rem); }
+    header .wrapper .warning {
+      background: rgba(28, 155, 85, 0.5);
+      border-radius: 1.25rem 1.25rem 0 0;
+      text-align: center;
+      padding: 1.5625rem 2.5rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25.3125rem;
+      color: #fff; }
+      header .wrapper .warning i {
+        position: absolute;
+        font-size: 30px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        top: 0;
+        color: #fff; }
 
 .play-btn {
   width: 5rem;
