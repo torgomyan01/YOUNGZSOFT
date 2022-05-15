@@ -738,18 +738,22 @@ header{
 
 
 .price-section{
-  @include flex('sb', 'c');
+  @include flex('sb', 'st');
   flex-wrap: wrap;
 }
 
 .price-block{
   @include col(3, 0.5rem);
-  height: 32.75rem;
+  min-height: 32.75rem;
   background: #1C9B55;
   border-radius: 0 0 20px 20px;
   position: relative;
   margin-top: 5rem;
   padding: 6.25rem 1.875rem 1.25rem 1.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   @media (max-width: $xl){
     @include col(6, 0.5rem);
   }
