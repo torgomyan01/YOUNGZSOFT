@@ -108,6 +108,15 @@ a {
 .border-bottom-while-gray {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
+.border-bottom-green {
+  border-bottom: 1px solid rgba(28, 155, 85, 0.5); }
+
+.bgc-green-hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .bgc-green-hover:hover {
+    background: rgba(28, 155, 85, 0.5); }
+
 .def-dropdown {
   width: auto;
   display: inline-block;
@@ -445,6 +454,59 @@ header {
   @media (max-width: 576px) {
     header {
       height: auto; } }
+  header.wiki {
+    height: 30.3125rem; }
+    @media (max-width: 576px) {
+      header.wiki {
+        height: 21.3125rem; } }
+    header.wiki .search-block {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      left: 0;
+      bottom: -2.5rem; }
+      header.wiki .search-block label {
+        width: 100%;
+        max-width: 43.75rem;
+        height: 5rem;
+        position: relative;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+        @media (max-width: 500px) {
+          header.wiki .search-block label {
+            max-width: calc(100% - 20px);
+            margin: 0 10px; } }
+        header.wiki .search-block label input {
+          width: 100%;
+          height: 100%;
+          border: 0;
+          border-bottom: 5rem;
+          font-weight: 300;
+          font-size: 1rem;
+          text-align: start;
+          color: #000000;
+          padding-left: 2.5rem;
+          background: #FFFFFF;
+          -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 50px; }
+        header.wiki .search-block label i {
+          font-size: 2.1875rem;
+          position: absolute;
+          right: 1.875rem;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          color: #282728; }
   header .header-solid {
     width: 100%;
     height: 100%;

@@ -20080,6 +20080,9 @@
 .text-transform-uppercase {
   text-transform: uppercase; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .mt-120 {
   margin-top: 7.5rem; }
 

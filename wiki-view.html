@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <!--  Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/helper.css">
+
+
+  <!--  scripts -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <title>YOUNGZSOFT Home</title>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-content">
+    <a href="#" class="logo d-none d-lg-block">
+      YOUNGZSOFT
+    </a>
+    <a href="#" class="logo d-block d-lg-none">
+      YG
+    </a>
+
+    <div class="menu-site">
+      <div class="def-dropdown">
+        <div class="dropdown-title">
+          ПРОДУКТЫ
+          <i class="fa-solid fa-angle-down ms-3"></i>
+        </div>
+        <div class="dropdown-body pl-30 pr-15 pb-30">
+          <p class="item-dropdown-body mt-20">
+            <a href="#icafecloud" data-scroll>
+              ICAFECLOUD
+            </a>
+          </p>
+          <p class="item-dropdown-body">
+            <a href="#ccbot" data-scroll>
+              CCBOOT
+            </a>
+          </p>
+        </div>
+      </div>
+      <a href="#price-block" data-scroll class="menu-item">
+        ЦЕНЫ
+      </a>
+      <a href="#" class="menu-item">
+        ВИКИ
+      </a>
+      <a href="#contacts" data-scroll class="menu-item">
+        КОНТАКТЫ
+      </a>
+      <a href="tel:" class="menu-item">
+        <i class="fa-solid fa-phone me-2"></i>
+        8 777 777-77-77
+      </a>
+
+      <div class="def-dropdown">
+        <div class="dropdown-title justify-content-end">
+          <i class="fa-regular fa-arrow-right-to-bracket me-2"></i>
+          Вход
+        </div>
+        <div class="dropdown-body pl-20 pr-15 pb-40" style="left: calc(-100% - 17px)">
+          <form action="#" method="post" class="row mt-2">
+            <div class="col-12 mt-2">
+              <label class="def-input">
+                <span>Логин </span>
+                <input type="text" name="username">
+              </label>
+            </div>
+            <div class="col-12 mt-2">
+              <label class="def-input">
+                <span>Пароль </span>
+                <input type="password" name="password">
+              </label>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-30">
+              <button type="submit" class="def-btn w-100">Вход</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu-board">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu">
+  <div class="mobile-menu-item">
+    <span class="d-flex justify-content-between">
+      ПРОДУКТЫ
+      <i class="fa-regular fa-angle-down"></i>
+    </span>
+
+    <div class="mobile-menu-item-body">
+      <a href="#icafecloud" data-scroll class="d-flex justify-content-between">
+        ICAFECLOUD
+      </a>
+      <a href="#ccbot" data-scroll class="d-flex justify-content-between">
+        CCBOOT
+      </a>
+    </div>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#price-block" data-scroll class="d-flex justify-content-between">
+      ЦЕНЫ
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#" class="d-flex justify-content-between">
+      ВИКИ
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="#contacts" data-scroll class="d-flex justify-content-between">
+      КОНТАКТЫ
+    </a>
+  </div>
+  <div class="text-center mt-5 fs30 c-while" id="mobile-login-btn">
+    <i class="fa-regular fa-arrow-right-to-bracket me-2"></i>
+    Вход
+  </div>
+
+  <form action="#" method="post" class="row mt-2 d-none mt-5" id="mobile-login-form">
+    <div class="col-12 mt-2">
+      <label class="def-input">
+        <span>Логин </span>
+        <input type="text" name="username">
+      </label>
+    </div>
+    <div class="col-12 mt-2">
+      <label class="def-input">
+        <span>Пароль </span>
+        <input type="password" name="password">
+      </label>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-30">
+      <button type="submit" class="def-btn w-100">Вход</button>
+    </div>
+  </form>
+</div>
+
+<header class="wiki">
+  <div class="header-solid">
+    <div class="wrapper pt-200">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center c-yellow text-transform-uppercase fs30 fs45-sm">
+            БАЗА ДАННЫХ YOUNGZSOFT WIKI:
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-block">
+      <label>
+        <input type="text" placeholder="Ищите в нашей Вики...">
+        <i class="fa-regular fa-magnifying-glass"></i>
+      </label>
+    </div>
+  </div>
+</header>
+
+
+<div class="wrapper mt-100">
+
+  <div class="fs144 fw-light d-flex justify-content-start align-items-center">
+    <a href="./wiki.html" class="me-3">
+      <img src="images/back.svg" alt="back icon">
+    </a>
+    <a href="./wiki.html" class="c-block-grey d-none d-sm-block">
+      Вики-база
+    </a>
+    <span class="px-2 d-none d-sm-block"> / </span>
+    <a href="#" class="c-block-grey d-none d-sm-block">
+      БЫСТРЫЙ СТАРТ
+    </a>
+    <span class="px-2 d-none d-sm-block"> / </span>
+    <span class="c-block fw-bold d-none d-sm-block">
+      Требования:
+    </span>
+  </div>
+
+
+  <h1 class="fs35 fs50-md c-block fw-bold border-bottom-green pb-3 mt-50 mb-30">
+    Требования:
+  </h1>
+
+ <div class="row">
+   <div class="col-12 col-sm-8">
+     <p class="fs18 c-block line-height-24">
+       Мы рекомендуем использовать ПК с установленным Windows Server 2012 или
+       более поздней версии, если их более 20. Это связано с тем, что iCafeCloud использует
+       общую папку для сохранения хода игры и исправления некоторых игр.
+     </p>
+
+     <p class="fs18 c-block line-height-24 mt-3">
+       Мы рекомендуем использовать ПК с установленным Windows Server 2012 или
+       более поздней версии, если их более 20. Это связано с тем, что iCafeCloud использует
+       общую папку для сохранения хода игры и исправления некоторых игр.
+     </p>
+   </div>
+ </div>
+
+
+
+</div>
+
+
+
+
+<footer>
+  <h1 class="text-center fs45 fw-bold mb-2 c-while">
+    YOUNGZSOFT
+  </h1>
+  <p class="text-center fs20 fw-bold mb-2 c-while">
+    © 2000-2022 YOUNGZSOFT. ALL RIGHTS RESERVED.
+  </p>
+  <div class="d-flex justify-content-center align-items-center mt-15">
+    <a href="#" class="mr-20">
+      <img src="images/fb.png" alt="Facebook">
+    </a>
+    <a href="#">
+      <img src="images/youtube.png" alt="youtube">
+    </a>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
