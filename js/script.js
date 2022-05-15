@@ -132,5 +132,17 @@ defaultInput.on('focus', function (){
     $(this).parent().addClass(active);
 })
 
+defaultInput.next('.password').on('click', function (){
+    const thisElem = $(this);
+    if(thisElem.hasClass(active)){
+        thisElem.removeClass(active);
+        thisElem.html(`<i class="fa-regular fa-eye"></i>`)
+        thisElem.prev('input').attr('type', 'password');
+    } else {
+        thisElem.addClass(active);
+        thisElem.html(`<i class="fa-regular fa-eye-slash"></i>`);
+        thisElem.prev('input').attr('type', 'text');
+    }
+})
 
 // -------------- FOR DEFAULT INPUT FUNCTION -------------------

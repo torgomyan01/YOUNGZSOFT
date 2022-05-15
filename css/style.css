@@ -229,7 +229,15 @@ option {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
+  .def-input .password {
+    position: absolute;
+    right: 5px;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer; }
   .def-input.active span {
     -webkit-transform: translateY(0);
             transform: translateY(0);

@@ -315,6 +315,14 @@ option{
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  position: relative;
+  .password{
+    position: absolute;
+    right: 5px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
   &.active{
     span{
       transform: translateY(0);
